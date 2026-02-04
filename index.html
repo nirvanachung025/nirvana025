@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>富貴山莊｜個人介紹</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== Ink Intro Overlay（开场水墨风动画）========== -->
+  <div id="inkIntro" class="ink-intro" aria-hidden="true">
+    <div class="ink-bg"></div>
+
+    <div class="ink-card">
+      <div class="ink-title">一筆入心 · 一念成安</div>
+      <div id="inkPoem" class="ink-poem" data-text="人生如寄，願每一次告別，都被溫柔安放。"></div>
+      <div class="ink-sub">（向下滑動）</div>
+    </div>
+
+    <button id="skipIntro" class="skip-intro" type="button">略過</button>
+  </div>
+
+  <!-- ========== Page 1：Hero ========== -->
+  <header id="page1" class="section hero">
+    <div class="hero-overlay"></div>
+
+    <nav class="top-nav">
+      <a class="brand" href="#page1">富貴山莊 ｜ 025組織</a>
+      <a class="nav-link" href="#page2">影片介紹</a>
+    </nav>
+
+    <div class="hero-content">
+      <div class="profile">
+        <img class="avatar" src="assets/avatar.jpg" alt="個人頭像" />
+        <div class="profile-text">
+          <h1 class="name">鍾永新</h1>
+          <p class="title">富貴山莊墓園｜025組織 準區服務總監 / Agent</p>
+
+          <div class="motto">
+            <span class="motto-quote">“</span>
+            <span>讓每一次安排，都成為家人安心的力量。</span>
+            <span class="motto-quote">”</span>
+          </div>
+
+          <div class="actions">
+            <!-- WhatsApp: 记得把号码改成国际格式，例如 +60... => 用 60 开头、不加 + -->
+            <a class="btn primary" target="_blank" rel="noopener"
+               href="https://wa.me/60XXXXXXXXXX?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E8%AB%AE%E8%A9%A2%E5%AF%8C%E8%B2%B4%E5%B1%B1%E8%8E%8A%E5%A2%93%E5%9C%92%E7%9B%B8%E9%97%9C%E8%B3%87%E8%A8%8A">
+              WhatsApp 聯絡我
+            </a>
+
+            <button class="btn ghost" id="scrollToVideos" type="button">
+              看影片介紹 ↓
+            </button>
+          </div>
+
+          <div class="contact">
+            <div class="contact-item">
+              <span class="label">WhatsApp</span>
+              <span class="value">✨ 019-818 6134 ✨</span>
+            </div>
+            <div class="contact-item">
+              <span class="label">服務區域</span>
+              <span class="value">砂拉越 / 古晉</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hero-hint">
+        <span class="dot"></span>
+        <span>向下滑動了解更多</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== Page 2：Videos Stepper ========== -->
+  <main id="page2" class="section videos">
+    <div class="container">
+      <h2 class="section-title">影片介紹｜一步步帶你了解</h2>
+      <p class="section-desc">點擊任一節點即可播放影片。</p>
+
+      <div class="stepper">
+        <div class="step-line" aria-hidden="true"></div>
+
+        <!-- Step 1 -->
+        <button class="step" type="button" 
+          data-title="第一步：了解墓園區域與格局"
+          data-src="https://www.youtube.com/embed/0ETPn78Hiq8?si=_L8Rt-_5deYIfUn1">
+          
+          <span class="step-index">01</span>
+          <span class="step-content">
+            <span class="step-title">了解墓園區域與格局</span>
+            <span class="step-sub">區位、園區分區、動線與環境</span>
+          </span>
+          <div class="video-wrap is-hidden">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/0ETPn78Hiq8?si=_L8Rt-_5deYIfUn1" 
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+            </iframe>
+          </div>
+          <span class="step-arrow">→</span>
+        </button>
+        
+
+        <!-- Step 2 -->
+        <button class="step" type="button"
+          data-title="第二步：配套、流程與文件"
+          data-src="https://www.youtube.com/embed/VIDEO_ID_2">
+          <span class="step-index">02</span>
+          <span class="step-content">
+            <span class="step-title">配套、流程與文件</span>
+            <span class="step-sub">購買流程、文件準備、注意事項</span>
+          </span>
+          <span class="step-arrow">→</span>
+        </button>
+
+        <!-- Step 3 -->
+        <button class="step" type="button"
+          data-title="第三步：實地導覽與案例分享"
+          data-src="https://www.youtube.com/embed/VIDEO_ID_3">
+          <span class="step-index">03</span>
+          <span class="step-content">
+            <span class="step-title">實地導覽與案例分享</span>
+            <span class="step-sub">常見問題、家屬關注點、建議</span>
+          </span>
+          <span class="step-arrow">→</span>
+        </button>
+
+        <!-- Step 4 (mp4 例子) -->
+        <button class="step" type="button"
+          data-title="第四步：園區服務與後續照護"
+          data-src="assets/demo.mp4">
+          <span class="step-index">04</span>
+          <span class="step-content">
+            <span class="step-title">園區服務與後續照護</span>
+            <span class="step-sub">清潔維護、節日祭拜、後續服務</span>
+          </span>
+          <span class="step-arrow">→</span>
+        </button>
+
+      </div>
+
+      <div class="bottom-cta">
+        <a class="btn primary" target="_blank" rel="noopener"
+           href="https://wa.me/60XXXXXXXXXX?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E9%A0%90%E7%B4%84%E7%8F%BE%E5%9C%B0%E5%B0%8E%E8%A6%BD">
+          預約現地導覽 / 諮詢
+        </a>
+        <a class="btn ghost" href="#page1">回到首頁 ↑</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== Video Modal ========== -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <div id="modalTitle" class="modal-title">影片標題</div>
+        <button class="modal-close" type="button" data-close="true">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- JS 动态插入 iframe 或 video -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
